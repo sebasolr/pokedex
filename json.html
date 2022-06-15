@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: #e5e5f7;
+            opacity: 1;
+            background-image: radial-gradient(#444cf7 1.4500000000000002px, #e5e5f7 1.4500000000000002px);
+            background-size: 29px 29px;
+        }
+        h2{
+            border: 1px dotted black;
+            width: 600px;
+            margin: 0 auto;
+            gap: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://i.imgur.com/hLldhia.png
+        " alt="chucks">
+        <h1>probado chuck norris</h1>
+        <button type="reload">actualizar</button>
+        <h2></h2>
+    </div>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+       const joke = document.querySelector("button")
+       const jokesRandom = document.querySelector("h1")
+        const meme =document.querySelector('h2')
+        
+    function llamarJoke(){
+        $.getJSON('https://api.chucknorris.io/jokes/random',function(datos){
+            console.log(datos.value)
+            meme.textContent = datos.value
+        } )}
+        
+        joke.addEventListener('click',function(){
+            llamarJoke();
+        })
+
+    </script>
+</body>
+</html>

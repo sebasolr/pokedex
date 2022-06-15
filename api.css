@@ -1,0 +1,30 @@
+.container{
+    display: flex;
+    background-color: bisque;
+    
+}
+#columna1{
+    width: 66%;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background: radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #e5e5f7 20%, #e5e5f7 80%, transparent 80%, transparent) 20px 20px, linear-gradient(#ebf8fb 1.6px, transparent 1.6px) 0 -0.8px, linear-gradient(90deg, #ebf8fb 1.6px, #e5e5f7 1.6px) -0.8px 0;
+    background-size: 40px 40px, 40px 40px, 20px 20px, 20px 20px;
+    overflow-y: scroll;
+    height: 600px;
+}
+#columna2{
+    display: inline-block;
+    text-align: center;
+    width: 33%;
+    background-color: #ffffff;
+    background-image:  radial-gradient(#9ae1f1 1.1px, transparent 1.1px), radial-gradient(#9ae1f1 1.1px, #ffffff 1.1px);
+    background-size: 44px 44px;
+    background-position: 0 0,22px 22px;
+    border: 0.5rem groove rgb(105, 247, 216);
+    height: 600px;
+    
+}
+#columna2 img{
+    height: 200px;
+    align-content: center;
+}

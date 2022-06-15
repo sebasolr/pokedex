@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function aire(radio){
+           return  (4/3)*Math.PI*(radio**3);
+        }
+        const aire2 = function(radio){
+            return  (4/3)*Math.PI*(radio**3);
+        }
+             //parametros funcion
+        const aire3 = radio => (4/3)*Math.PI*(radio**3);
+        
+        const balones = [5,3,8,20,2];
+
+        // const balones_grandes = balones.filter(function (b) {return b >= 5})
+        const balones_grandes = balones.filter(b => b>=5)
+
+        let today = new Date();
+        let semana = today.getDay()
+        
+        if (semana == 0){
+            semana = "domingo"
+        }
+        else if (semana == 1){
+            semana = "lunes"
+        }
+        else if (semana == 2){
+            semana = "martes"
+        }
+        else if (semana == 3){
+            semana = "miercoles"
+        }
+        else if (semana == 4){
+            semana = "jueves"
+        }else{
+
+            semana = "viernes"
+        }
+           
+        console.log(semana)
+        
+           
+        
+        
+
+    </script>
+</body>
+</html>
